@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Site</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        color: #fff;
+      }
+      li {
+        color: rgba(0, 0, 0, 0.7);
+        /* display: inline; */
+        padding: 15px;
+        text-transform: uppercase;
+        font-size: 10px;
+      }
+
+      body {
+        background-color: #222;
+      }
+      nav {
+        background-color: white;
+        padding: 10px;
+      }
+
+      li:hover {
+        color: #bac964;
+        cursor: pointer;
+      }
+      ul {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+      }
+
+      /* .mine {
+        font-size: 30px;
+      } */
+      /* div {
+        color: white;
+      } */
+
+      /* #blue {
+        background-color: chocolate;
+      } */
+      /* p {
+        color: white;
+        margin: 20px;
+      } */
+      #size {
+        font-size: 18px;
+      }
+      .back {
+        background-color: red;
+        padding: 10px;
+      }
+      .presh {
+        background-color: #333;
+        padding: 30px;
+        border-radius: 7px;
+        width: 450px;
+        margin-bottom: 24px;
+      }
+
+      .title {
+        color: #bac964;
+        font-size: 20px;
+        margin-bottom: 8px;
+      }
+
+      .date {
+        margin-bottom: 10px;
+        font-size: 12px;
+      }
+
+      .content {
+        font-size: 16px;
+        margin-bottom: 16px;
+        line-height: 1.7;
+        color: rgba(255, 255, 255, 0.4);
+      }
+
+      .category {
+        font-size: 25px;
+        margin-bottom: 48px;
+      }
+
+      small {
+        color: rgba(255, 255, 255, 0.3);
+      }
+
+      .wrapper {
+        display: flex;
+        column-gap: 30px;
+        /* background-color: red; */
+        justify-content: center;
+      }
+
+      .gallery div {
+        width: 350px;
+        height: 350px;
+        background-color: white;
+        margin-bottom: 30px;
+      }
+
+      .gallery > section {
+        display: flex;
+        column-gap: 30px;
+        justify-content: center;
+      }
+
+      .gallery {
+        margin-bottom: 100px;
+        margin-top: 50px;
+      }
+      .hero-section {
+        height: 120vh;
+        background-image: url(his.webp);
+        background-position: center;
+        background-size: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .hero-next {
+        background-color: rgba(0, 0, 0, 0.6);
+        height: 100%;
+      }
+      .hero-section img {
+        width: 100%;
+        /* height: 100%; */
+      }
+      .hero-next > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* background-color: red; */
+        height: 100%;
+      }
+      .edit {
+        width: 100%;
+        padding-bottom: 50px;
+      }
+      .anti,.uncle  {
+        width: 100%;
+        background-color: grey;
+        /* color: #fff; */
+        /* padding: 50px; */
+        font-size: 16px;
+        display: block;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        /* height: 40px; */
+        padding: 10px;
+      }
+      .create {
+        font-size: 24px;
+        margin-bottom: 30px;
+        line-height: 1.2;
+      }
+      /* .uncle {
+        width: 100%;
+        background-color: grey;
+        /* color: #fff; */
+        /* padding: 50px; */
+        font-size: 16px;
+        display: block;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        /* height: 40px; */
+        padding: 10px;
+      } */
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>home</li>
+          <li class="mine">portfolio</li>
+          <li>resume</li>
+          <li class="mine">about</li>
+          <li id="blue">contact</li>
+        </ul>
+      </nav>
+      <div class="hero-section">
+        <div class="hero-next">
+          <div>
+            <p>Hello, I'm</p>
+            <h1>Charles Anderson</h1>
+            <small> AND THIS IS MY REZUME</small>
+          </div>
+        </div>
+        <!-- <img src="his.webp" alt="" /> -->
+      </div>
+    </header>
+    <main>
+      <!-- <div>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        <span class="mine">Cumque</span> provident, delectus accusantium
+        adipisci labore beatae numquam consequuntur omnis cum impedit id
+        molestiae accusamus neque voluptates temporibus reiciendis recusandae,
+        deserunt quos.
+      </div>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates,
+        ea! Consequuntur repellendus assumenda obcaecati magnam natus
+        dignissimos neque quibusdam? Adipisci, eligendi magni incidunt eum a
+        aliquid blanditiis sunt sapiente dicta!
+      </p>
+      <p class="back">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quam rerum
+        a, quidem adipisci eos doloribus similique, molestiae facere dolorem
+        optio voluptate repellat quibusdam excepturi quis modi reprehenderit ea
+        vero!
+      </p>
+      <p id="size">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+        magnam, vel tempore debitis cum doloremque quidem? Harum rerum, vitae
+        aliquid eos, nihil tempora saepe facilis, unde tenetur nam ratione ut.
+      </p>
+      <p class="back">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat
+        aliquid ipsa ducimus, explicabo debitis laborum inventore facilis magni
+        itaque cupiditate excepturi tenetur aut atque tempora dicta! Explicabo
+        sed exercitationem autem?
+      </p> -->
+      <div class="gallery">
+        <section>
+          <div></div>
+          <div></div>
+          <div></div>
+        </section>
+        <section>
+          <div></div>
+          <div></div>
+          <div></div>
+        </section>
+      </div>
+
+      <div class="wrapper">
+        <div class="container">
+          <h3 class="category">Education</h3>
+          <section class="presh">
+            <p class="date">March 2013-Present</p>
+            <h5 class="title">Master in Information Technology</h5>
+            <p class="content">
+              Even the all-powerful Pointing has no control about the blind
+              texts it is an almost unorthographic
+            </p>
+
+            <small>New York University</small>
+          </section>
+          <section class="presh">
+            <p class="date">March 2013-Present</p>
+            <h5 class="title">Master in Information Technology</h5>
+            <p class="content">
+              Even the all-powerful Pointing has no control about the blind
+              texts it is an almost unorthographic
+            </p>
+
+            <small>New York University</small>
+          </section>
+          <section class="presh">
+            <p class="date">March 2013-Present</p>
+            <h5 class="title">Master in Information Technology</h5>
+            <p class="content">
+              Even the all-powerful Pointing has no control about the blind
+              texts it is an almost unorthographic
+            </p>
+
+            <small>New York University</small>
+          </section>
+          <section class="presh">
+            <p class="date">March 2013-Present</p>
+            <h5 class="title">Master in Information Technology</h5>
+            <p class="content">
+              Even the all-powerful Pointing has no control about the blind
+              texts it is an almost unorthographic
+            </p>
+
+            <small>New York University</small>
+          </section>
+        </div>
+        <div class="container">
+          <h3 class="category">Experience</h3>
+          <section class="presh">
+            <p class="date">March 2013-Present</p>
+            <h5 class="title">Master in Information Technology</h5>
+            <p class="content">
+              Even the all-powerful Pointing has no control about the blind
+              texts it is an almost unorthographic
+            </p>
+
+            <small>New York University</small>
+          </section>
+          <section class="presh">
+            <p class="date">March 2013-Present</p>
+            <h5 class="title">Master in Information Technology</h5>
+            <p class="content">
+              Even the all-powerful Pointing has no control about the blind
+              texts it is an almost unorthographic
+            </p>
+
+            <small>New York University</small>
+          </section>
+          <section class="presh">
+            <p class="date">March 2013-Present</p>
+            <h5 class="title">Master in Information Technology</h5>
+            <p class="content">
+              Even the all-powerful Pointing has no control about the blind
+              texts it is an almost unorthographic
+            </p>
+
+            <small>New York University</small>
+          </section>
+          <section class="presh">
+            <p class="date">March 2013-Present</p>
+            <h5 class="title">Master in Information Technology</h5>
+            <p class="content">
+              Even the all-powerful Pointing has no control about the blind
+              texts it is an almost unorthographic
+            </p>
+
+            <small>New York University</small>
+          </section>
+        </div>
+      </div>
+      <div>
+        <div>
+          <h3 class="create">Get in Touch</h3>
+          <div class="edit">
+            <input class="anti" type="name" placeholder="Your Name" />
+            <input class="anti" type="email" placeholder="Your Email" />
+            <input class="anti" type="tel" placeholder="Your phone" />
+            <textarea
+              class="uncle"
+              name="message"
+              id="fish "
+              cols="30"
+              rows="10"
+              placeholder="write a message"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
+08131923489

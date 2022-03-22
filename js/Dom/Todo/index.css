@@ -1,0 +1,17 @@
+ul {
+  list-style-type: none;
+}
+
+ul > li,
+ul > li > div {
+  display: flex;
+  align-items: center;
+}
+
+ul > li {
+  justify-content: space-between;
+}
+
+ul > li > div {
+  column-gap: 15px;
+}

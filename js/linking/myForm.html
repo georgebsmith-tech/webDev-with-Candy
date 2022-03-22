@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      main {
+        background-color: grey;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div>
+        <div>
+          <label
+            for="
+            "
+          >
+            First Name</label
+          >
+          <input type="text" placeholder="E.g John" id="first-name" />
+        </div>
+        <div>
+          <label
+            for="
+            "
+          >
+            Last Name</label
+          >
+          <input type="text" placeholder="E.g Doe" id="last-name" />
+        </div>
+        <div>
+          <button onclick="giveRemark()">Submit</button>
+        </div>
+        <div>
+          <p id="sytem-remark"></p>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      let firstNameHolder = document.getElementById("first-name");
+      let lastNameHolder = document.getElementById("last-name");
+      let remarkHolder = document.getElementById("sytem-remark");
+
+      function giveRemark() {
+        let firstName = firstNameHolder.value;
+        let lastName = lastNameHolder.value;
+        remarkHolder.innerText = "You Entered " + firstName + " " + lastName;
+        remarkHolder.style.color = "white";
+      }
+    </script>
+  </body>
+</html>

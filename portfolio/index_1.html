@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Site</title>
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .secondary {
+      color: rgba(0, 0, 0, 0.7);
+      /* display: inline; */
+      padding: 15px;
+      text-transform: uppercase;
+      font-size: 10px;
+    }
+
+
+    .divine {
+      background-color: #333333;
+      border-radius: 20px;
+      width: 450px;
+      height: 200px;
+      color: #ffffff66;
+      padding: 30px;
+      margin: 40px 10px 40px;
+      border: 4px;
+    }
+
+    .george {
+      color: #fff;
+      font-size: 12px
+    }
+
+    .molfix {
+      color: #bac964;
+      font-family: 'Courier New', Courier, monospace
+    }
+
+    .boma {
+      color: rgba(255, 255, 255, .4);
+      font-size: 16px
+    }
+
+    body {
+      background-color: #222;
+    }
+
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      column-gap: 30px;
+      margin-bottom: 30px;
+    }
+
+    .smith {
+      color: #fff;
+      margin: 40px 10px 30px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: white;
+      padding: 10px;
+    }
+
+    li:hover {
+      color: #bac964;
+      cursor: pointer;
+    }
+
+    ul {
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+    }
+
+    .segment {
+      color: rgba(255, 255, 255, .4);
+      font-size: 14px;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      padding: 15px;
+    }
+
+    /* .photos {
+      padding: 30px, ;
+      margin-left: 300px;
+
+    } */
+
+    .trying {
+      display: flex;
+      margin-bottom: 200px;
+      justify-content: center;
+      justify-content: space-evenly;
+    }
+
+    .size {
+      width: 400px;
+      height: 300px;
+    }
+
+    .decor {
+      font-size: 24px;
+      color: #fff;
+      margin-bottom: 50px;
+    }
+
+    .another {
+      font-size: 30px;
+      text-align: center;
+      color: #fff;
+      margin-bottom: 30px;
+    }
+
+    .format {
+      font-size: 12px;
+      text-align: center;
+      margin-left: 50px;
+      /* margin-bottom: 100px; */
+    }
+
+    .continue {
+      width: 500px;
+      height: 350px;
+      /* background-color: white; */
+      /* justify-content: center; */
+      padding-left: 100px;
+      margin-bottom: 100px;
+      margin-top: 50px;
+    }
+
+    .done {
+      /* justify-content: center; */
+      /* background-color: blue; */
+      display: flex;
+    }
+
+    /* .differ {
+      background-color: #fff;
+      width: 100%;
+      height: 100%;
+    } */
+    .develop {
+      /* justify-content: center; */
+      /* background-color: pink; */
+      height: 250px;
+      width: 500px;
+      margin-bottom: 10px;
+      padding-left: 100px;
+      /* margin-top: 500px; */
+      /* padding-top: 500px; */
+      /* align-items: center; */
+      font-size: 18px;
+      margin-top: 80px;
+      color: rgba(255, 255, 255, .4);
+      /* box-sizing: border-box; */
+      font-weight: 300;
+      text-align: left;
+      /* background-color: aqua; */
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
+
+    .beautify {
+      width: 100px;
+      height: 35px;
+      border-radius: 20px;
+      background-color: #bac964;
+      text-transform: uppercase;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      color: #fff;
+      border-color: #bac964;
+      /* padding-left: 100px; */
+    }
+
+    .together {
+      width: 100%;
+      height: 100%;
+    }
+
+    .belong {
+      width: 150px;
+      height: 35px;
+      border-radius: 20px;
+      background-color: #6c757d;
+      text-transform: uppercase;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      color: #fff;
+      border-color: #6c757d;
+      /* padding-left: 100px; */
+    }
+
+    .conclude {
+      padding-left: 100px;
+      margin-bottom: 50px;
+      /* background-color: green; */
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      ;
+    }
+
+    .rebuild {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .male {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li class="secondary">Home</li>
+        <li class="secondary">Portfolio</li>
+        <li class="secondary">Resume</li>
+        <li class="secondary">About</li>
+        <li class="secondary">Contact</li>
+      </ul>
+    </nav>
+  </header>
+  <ul>
+    <li class="segment">All</li>
+    <li class="segment">Packaging</li>
+    <li class="segment">Mockup</li>
+    <li class="segment">Topography</li>
+    <li class="segment">Photography</li>
+  </ul>
+
+  <div class="trying">
+    <section>
+      <div class="decor"><img class="size" src="./images/his.webp" alt="a hand holding a watermelon">
+        <p class="decor">packaging brand<br><small class="format">MOCKUP</small></p>
+      </div>
+      <div><img class="size" src="./images/his.webp" alt=" two vertical product boxes">
+        <p class="decor">product box package mockup<br><small class="format">MOCKUP</small></p>
+      </div>
+    </section>
+    <section>
+      <div> <img class="size" src="./images/his.wp.webp" alt="two square boxes">
+        <p class="decor">creative packaging design<br><small class="format">PACKAGING</small></p>
+      </div>
+      <div> <img class="size" src="./images/his.webp" alt="a hand holdimg a watermelon">
+        <p class="decor">white space Photography<br><small class="format">MOCKUP</small></p>
+      </div>
+    </section>
+    <section>
+      <div><img class="size" src="./images/his.webp" alt="two vertical product boxes">
+        <p class="decor">product box package mockup<br><small class="format">PACKAGING</small></p>
+      </div>
+      <div><img class="size" src="./images/his.webp" alt="isometric 3D Extrusion">
+        <p class="decor">3D mockup<br><small class="format">MOCKUP</small></p>
+      </div>
+    </section>
+  </div>
+  <section class="another">
+    My<strong> Resume</strong>
+
+  </section>
+
+  </a>
+  <div class="wrapper">
+    <div class="square">
+      <h2 class="smith">Education</h2> <br>
+      <section class="divine">
+        <h5 class="george">March2013- Present</h5><br>
+        <h3 class="molfix">Masteral in Technology</h3><br>
+        <p class="boma">Even the all-powerful pointing has no control about the
+          blind texts it is <br>an almost unorthographic.<br><br>New York University</p>
+      </section>
+      <h2 class="smith">Experience</h2> <br>
+      <section class="divine">
+        <h5 class="george">March2013- Present</h5><br>
+        <h3 class="molfix">Lead Product Designer</h3><br>
+        <p class="boma">Even the all-powerful pointing has no control about the
+          blind texts it is <br>an almost unorthographic.<br><br>Github</p>
+      </section>
+    </div>
+    <div class="square">
+      <h2 class="smith">Experience</h2> <br>
+      <section class="divine">
+        <h5 class="george">March2013- Present</h5><br>
+        <h3 class="molfix">Lead Product Designer</h3><br>
+        <p class="boma">Even the all-powerful pointing has no control about the
+          blind texts it is <br>an almost unorthographic.<br><br>Github</p>
+      </section>
+      <h2 class="smith">Experience</h2> <br>
+      <section class="divine">
+        <h5 class="george">March2013- Present</h5><br>
+        <h3 class="molfix">Lead Product Designer</h3><br>
+        <p class="boma">Even the all-powerful pointing has no control about the
+          blind texts it is <br>an almost unorthographic.<br><br>Github</p>
+      </section>
+    </div>
+  </div>
+
+  <div class="done">
+    <section class="continue">
+      <img class="male" src="./images/his.webp" alt="image of a man">
+    </section>
+    <section>
+      <section class="develop">
+        <!-- <aside class="differ"> -->
+        <p class="rebuild">About <strong> Me </strong></p>
+        <p class="together">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language
+          ocean.<br><br>
+
+          A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
+          paradisematic
+          country, in which roasted parts of sentences fly into your mouth.</p>
+      </section>
+      <section class="conclude">
+        <input class="beautify" type="button" value="hire me">
+        <input class="belong" type="button" value="download cv">
+        <!-- </aside> -->
+      </section>
+    </section>
+  </div>
+  <main></main>
+  <footer></footer>
+</body>
+
+</html>

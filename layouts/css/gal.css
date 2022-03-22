@@ -1,0 +1,26 @@
+body {
+  background-color: black;
+}
+.victor > div {
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  background-color: chocolate;
+  column-gap: 20px;
+  height: 300px;
+}
+.victor {
+  /* background-color: #fff; */
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 20px;
+}
+.mine {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+
+  height: 300px;
+}
+.mine > div {
+  background-color: gray;
+}

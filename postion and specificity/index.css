@@ -1,0 +1,46 @@
+.candy {
+  color: blue;
+  display: none;
+}
+
+section > div {
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+}
+
+section > div:nth-child(1) {
+  background-color: red;
+  position: fixed;
+  left: 70px;
+  top: 70px;
+  z-index: -1;
+}
+
+section > div:nth-child(2) {
+  background-color: green;
+}
+
+section > div:nth-child(3) {
+  background-color: blue;
+}
+
+section > div:last-child {
+  background-color: chocolate;
+}
+
+.trying > div {
+  width: 200px;
+  height: 200px;
+  border: 1px dashed red;
+}
+
+.trying > div:first-child {
+  background-color: gray;
+  position: absolute;
+  top: 20px;
+}
+
+.trying {
+  /* position: relative; */
+}

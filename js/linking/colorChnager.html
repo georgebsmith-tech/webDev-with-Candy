@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      main {
+        background-color: grey;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      main div {
+        display: flex;
+        /* flex-direction: column; */
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div>
+        <button onmouseenter="changeToRed()">red</button
+        ><button onclick="changeToGreen()">green</button
+        ><button onclick=" changeToBlue()">Blue</button
+        ><button onmouseenter="changeToYellow()">yellow</button>
+      </div>
+    </main>
+
+    <script>
+      // let buttons= document.getElementsByTagName("button")
+      // let redControler=buttons[0]
+      let theMain = document.getElementsByTagName("main")[0];
+
+      function changeToRed() {
+        theMain.style.backgroundColor = "red";
+      }
+
+      function changeToGreen() {
+        theMain.style.backgroundColor = "green";
+      }
+
+      function changeToBlue() {
+        theMain.style.backgroundColor = "blue";
+      }
+
+      function changeToYellow() {
+        theMain.style.backgroundColor = "yellow";
+      }
+
+      //   changeToRed();
+    </script>
+  </body>
+</html>
