@@ -15,3 +15,53 @@ ul > li {
 ul > li > div {
   column-gap: 15px;
 }
+
+body{
+  background-color: rgb(48, 48, 240);
+}
+
+main{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main > div{
+  background-color: #fff;
+  border-radius: 10px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+main > div > h1{
+display: flex;
+justify-content: center;
+}
+
+main > div > div {
+display: flex;
+justify-content: center;
+}
+
+.text{
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+}
+
+.text  input{
+  outline: none;
+  border: 2px solid #007bff;
+  border-radius: 4px;
+}
+
+.text button{
+  background-color: #007bff;
+  border: 2px solid #007bff;
+  color: #fff;
+  width: 50px;
+  border-radius: 4px;
+}

@@ -12,17 +12,18 @@ function displayTodos() {
     content =
       content +
       `  <li>
-    <div>
+    <div >
       <input type="checkbox" />
       <p>${u}</p>
     </div>
-    <div>
+    <div class="navi">
       <p>Edit</p>
-      <div>del</div>
+      <div class="remove">del</div>
     </div>
   </li>`;
   }
   ul.innerHTML = content;
+  
 }
 
 document.querySelector("button").addEventListener("click", function () {
@@ -30,3 +31,14 @@ document.querySelector("button").addEventListener("click", function () {
   document.querySelector("input").value = "";
   displayTodos();
 });
+
+document.querySelector("checkbox").addEventListener("click", function() {
+  todos.strike(document.querySelector("p"));
+  displayTodos();
+});
+
+document.querySelectorAll(".remove").addEventListener("click", function(){
+todos.classlist.remove(displayTodos)
+
+.remove.style.cursor ="pointer"
+})
