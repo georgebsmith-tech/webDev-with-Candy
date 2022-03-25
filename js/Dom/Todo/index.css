@@ -16,11 +16,11 @@ ul > li > div {
   column-gap: 15px;
 }
 
-body{
+body {
   background-color: rgb(48, 48, 240);
 }
 
-main{
+main {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -28,7 +28,7 @@ main{
   align-items: center;
 }
 
-main > div{
+main > div {
   background-color: #fff;
   border-radius: 10px;
   width: 400px;
@@ -36,32 +36,39 @@ main > div{
   flex-direction: column;
 }
 
-main > div > h1{
-display: flex;
-justify-content: center;
+main > div > h1 {
+  display: flex;
+  justify-content: center;
 }
 
 main > div > div {
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-.text{
+.text {
   display: flex;
   flex-direction: row;
   column-gap: 20px;
 }
 
-.text  input{
+.text input {
   outline: none;
   border: 2px solid #007bff;
   border-radius: 4px;
+  padding: 8px 14px;
 }
 
-.text button{
+.text button {
   background-color: #007bff;
   border: 2px solid #007bff;
   color: #fff;
   width: 50px;
   border-radius: 4px;
+}
+
+.remove {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
 }

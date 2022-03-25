@@ -18,12 +18,33 @@ function displayTodos() {
     </div>
     <div class="navi">
       <p>Edit</p>
-      <div class="remove">del</div>
+     
+      <i class="fa fa-trash remove"></i>
     </div>
   </li>`;
   }
   ul.innerHTML = content;
-  
+  // for (let item of document.querySelectorAll(".remove")) {
+  //   item.addEventListener("click", function () {
+  //     todos.pop();
+  //     displayTodos();
+  //   });
+  // }
+  let items = document.querySelectorAll(".remove");
+  for (let index in items) {
+    items[index].addEventListener("click", function () {
+      // todos.pop();
+      // displayTodos();
+      console.log(index);
+      // Array.from(items).splice(index, 1);
+      displayTodos();
+    });
+  }
+  // for (let g of document.querySelectorAll(".remove")) {
+  //   g.style.cursor = "pointer";
+  //   g.style.padding = "10px";
+  //   g.style.backgroundColor = "#007bff";
+  // }
 }
 
 document.querySelector("button").addEventListener("click", function () {
@@ -32,13 +53,11 @@ document.querySelector("button").addEventListener("click", function () {
   displayTodos();
 });
 
-document.querySelector("checkbox").addEventListener("click", function() {
+document.querySelector("checkbox").addEventListener("click", function () {
   todos.strike(document.querySelector("p"));
   displayTodos();
 });
 
-document.querySelectorAll(".remove").addEventListener("click", function(){
-todos.classlist.remove(displayTodos)
-
-.remove.style.cursor ="pointer"
-})
+// document.querySelectorAll(".remove").addEventListener("click", function () {
+//   todos.classlist;
+// });
