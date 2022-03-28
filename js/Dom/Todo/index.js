@@ -14,10 +14,10 @@ function displayTodos() {
       `  <li>
     <div >
       <input type="checkbox" />
-      <p>${u}</p>
+      <p class="line-through">${u}</p>
     </div>
     <div class="navi">
-      <p>Edit</p>
+      <i class="fa fa-edit pen"></i>
      
       <i class="fa fa-trash remove"></i>
     </div>
@@ -45,6 +45,12 @@ function displayTodos() {
   //   g.style.padding = "10px";
   //   g.style.backgroundColor = "#007bff";
   // }
+
+  let strike = document.querySelector(".line-through");
+  strike.addEventListener("click", function(){
+    
+  })
+  
 }
 
 document.querySelector("button").addEventListener("click", function () {

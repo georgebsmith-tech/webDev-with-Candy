@@ -1,5 +1,24 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
 ul {
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+
+.line-through{
+text-decoration: line-through;
+}
+
+.ordered{
+  width:100%;
+  margin-bottom: 40px;
 }
 
 ul > li,
@@ -8,9 +27,9 @@ ul > li > div {
   align-items: center;
 }
 
-ul > li {
+/* ul > li {
   justify-content: space-between;
-}
+} */
 
 ul > li > div {
   column-gap: 15px;
@@ -39,6 +58,7 @@ main > div {
 main > div > h1 {
   display: flex;
   justify-content: center;
+  margin:30px
 }
 
 main > div > div {
@@ -49,6 +69,7 @@ main > div > div {
 .text {
   display: flex;
   flex-direction: row;
+  margin: 30px;
   column-gap: 20px;
 }
 
@@ -67,8 +88,40 @@ main > div > div {
   border-radius: 4px;
 }
 
-.remove {
+.remove  {
   padding: 10px;
   background-color: #007bff;
+  border-radius: 3px;
   color: #fff;
+}
+
+.pen{
+  font-size: 20px !important;
+  color: black;
+  cursor: pointer;
+  /* background-color: pink; */
+}
+
+li {
+align-items: center;
+  background-color: lightblue;
+  margin: 10px;
+ display: flex;
+ border-radius: 5px;
+ border:2px solid rgba(148, 145, 145, 0.5);
+ flex-direction: row;
+ justify-content: space-around;
+  padding: 10px 0px;
+  width: 90%;
+}
+
+li > div:nth-child(2) > p{
+  /* display: flex; */
+  margin-right: 20px;
+  /* flex-direction: row; */
+ /* justify-content: flex-start; */
+}
+
+li > div:first-child > input{
+  margin-right: 20px;
 }
