@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      main > div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .hide {
+        display: none;
+      }
+    </style>
+
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div>
+        <section class="player-section">
+          <div class="form-contanter form-container-1">
+            <input type="text" class="input input-1" />
+            <button class="enter enter-1">Enter</button>
+          </div>
+          <div>
+            <h2 class="player-title">
+              Player One
+            </h2>
+            <h2 class="player player-1"></h2>
+          </div>
+
+          <div>
+            <p class="player-score score-1">
+              0
+            </p>
+          </div>
+          <div>
+            <button class="roll roll-1">
+              Roll Die
+            </button>
+          </div>
+        </section>
+        <section class="player-section">
+          <div>
+            <input type="text" class="input input-2" />
+            <button>Enter</button>
+          </div>
+          <div>
+            <h2 class="player-title">
+              Player two
+            </h2>
+            <h2 class="player player-2"></h2>
+          </div>
+
+          <div>
+            <p class="player-score score-2">
+              0
+            </p>
+          </div>
+          <div>
+            <button class="roll roll-2">
+              Roll Die
+            </button>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
