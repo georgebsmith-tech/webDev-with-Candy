@@ -1,0 +1,115 @@
+body{
+    background-color: blue;
+}
+
+main > div {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 150px;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+.hide {
+display: none !important;
+}
+
+.show {
+    display: contents !important;
+    display: flex;
+    justify-content: center;
+}
+
+.roll{
+    background-color: red;
+    margin-bottom: 50px;
+    height: 40px;
+    border: 2px dotted #fff;
+    width: 100px;
+    font-size: 18px;
+    font-weight: 600px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.input{
+    height: 30px;
+    outline: none;
+
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.enter{
+    background-color: green;
+    border: 1px solid green;
+    width:90px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.player-score{
+    background-color: yellow;
+    text-align: center;
+    height: 40px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    font-size: 24px;
+    border-radius: 15px;
+    border: 2px dotted #fff;
+    font-weight: bolder;
+}
+
+.first-played{
+    display: flex;
+    justify-content: center;
+}
+
+.player-section{
+    width: 400px;
+    border: 2px dashed yellowgreen;
+    box-sizing: border-box;
+}
+
+.player{
+    color: #fff;
+    text-align: center;
+
+}
+
+.player-section > div{
+    padding-left: 30px;
+}
+
+.game{
+    text-align: center;
+    font-size: 32px;
+    color: yellow;
+    margin-bottom: 50px;
+    font-weight: 600;
+
+}
+
+.character{
+    text-align: center;
+    font-style: italic;
+    color: red;
+}
+
+.character-2{
+    text-align: center;
+    font-style: italic;
+    color: red;
+}
+
