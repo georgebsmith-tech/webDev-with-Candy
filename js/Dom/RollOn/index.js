@@ -1,4 +1,6 @@
 let get = (item) => document.querySelector(item);
+let done = (item) => document.querySelectorAll(item);
+
 
 let inputOneHolder = get(".input-1");
 let inputOneButton = get(".enter-1");
@@ -8,6 +10,7 @@ let rollOne = get(".roll-1");
 let enterBox = get(".enter-1");
 let enterBox_2 = get(".enter-2")
 let scoreOne = get(".score-1");
+let all = done(".player-score") 
 
 
 let inputTwoHolder = get(".input-2");
@@ -33,27 +36,30 @@ function final() {
 
 
   if (scoreOne.innerText * 1 >= 100) {
+    // all.innerText === 0;
     game.innerText = "GAME OVER!!!";
-    winner.innerText = "PLAYER ONE WINS";
+    // game.classList.add("game");
+    winner.textContent = "PLAYER ONE WINS";
     get(".modal").classList.remove("hide")
 
   }
 
   else {
     game.innerText = "";
-    game.innerText = "";
+    winner.innerText = "";
   }
 }
 
 function final_two() {
 
-  if (scoreTwo.innnerText >= 100) {
+  if (scoreTwo.innnerText * 1 >= 100) {
     game.innerText = "GAME OVER!!!";
     winner.innerText = "PLAYER TWO WINS";
+    get(".modal").classList.remove("hide")
   }
   else {
     game.innerText = "";
-    game.innerText = "";
+    winner.innerText = "";
   }
 
 }
@@ -77,11 +83,11 @@ function character() {
 function character_two() {
   if (inputTwoHolder.value === "") {
     characTwo_Name.innerText = "input a name!";
-    console.log(formContainerTwo.classList.add("show"));
-
+    
   }
   else {
     characTwo_Name.innerText = "";
+    console.log(formContainerTwo.classList.add("hide"));
   }
 }
 
@@ -93,13 +99,30 @@ enterBox_2.addEventListener("click", character_two);
 
 inputTwoButton.addEventListener("click", () => {
   playerTwo.innerText = inputTwoHolder.value;
-  console.log(formContainerTwo.classList.add("hide"));
+  // console.log(formContainerTwo.classList.add("hide"));
 });
 
 
-rollTwo.addEventListener("click", final_two, () => {
+rollTwo.addEventListener("click", () => {
+
+if (flag === false) {
+
+
+  if (playerTwo.innnerText !== ""){
   let roll = 1 + Math.floor(Math.random() * 5);
   scoreTwo.innerText = scoreTwo.innerText * 1 + roll;
+final_two()
+flag = true
+  }
+   else {
+      alert("Player Two name must be entered!!")}
+
+}
+else {
+    alert("Allow Player ONE na")
+  }
+
+
 });
 
 
@@ -151,7 +174,10 @@ rollOne.addEventListener("click", () => {
 // })
 
 get(".modal").addEventListener("click", () => {
-  get(".modal").classList.add("hide")
+
+  get(".modal").classList.add("hide");
+  all[0].innerText === 0;
+  all[1].innerText === 0;
 })
 
 

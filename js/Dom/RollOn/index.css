@@ -62,6 +62,11 @@ display: none !important;
 
 }
 
+
+.player-title{
+    margin-top: 20px;
+}
+
 .player-score{
     background-color: yellow;
     text-align: center;
@@ -90,6 +95,8 @@ display: none !important;
 .player{
     color: #fff;
     text-align: center;
+    margin-bottom: 20px;
+    
 
 }
 
@@ -97,15 +104,29 @@ display: none !important;
     padding-left: 30px;
 }
 
+.ended{
+background-color: white;
+border-radius: 6px;
+}
+
 .game{
     text-align: center;
     font-size: 32px;
     color: red;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     font-weight: 600;
-    padding: 150px;
-    background-color: white;
-    border-radius: 6px;
+    padding: 150px 100px 20px 100px;
+
+}
+
+.winner{
+    text-align: center;
+    font-size: 32px;
+    color: green;
+    padding: 0px 100px 150px 100px;
+    /* margin-bottom: 50px; */
+    font-weight: 600;
+    /* padding: 150px; */
 
 }
 
