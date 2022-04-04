@@ -1,5 +1,6 @@
 let get = (item) => document.querySelector(item);
 let done = (item) => document.querySelectorAll(item);
+const log =console.log
 
 
 let inputOneHolder = get(".input-1");
@@ -35,7 +36,7 @@ function final() {
   console.log(scoreOne.innerText)
 
 
-  if (scoreOne.innerText * 1 >= 100) {
+  if (scoreOne.innerText * 1 >= 20) {
     // all.innerText === 0;
     game.innerText = "GAME OVER!!!";
     // game.classList.add("game");
@@ -52,7 +53,10 @@ function final() {
 
 function final_two() {
 
-  if (scoreTwo.innnerText * 1 >= 100) {
+//  log(scoreTwo.innerText*1)
+
+  if (scoreTwo.innerText * 1 >= 20) {
+    log("inner")
     game.innerText = "GAME OVER!!!";
     winner.innerText = "PLAYER TWO WINS";
     get(".modal").classList.remove("hide")
@@ -176,8 +180,8 @@ rollOne.addEventListener("click", () => {
 get(".modal").addEventListener("click", () => {
 
   get(".modal").classList.add("hide");
-  all[0].innerText === 0;
-  all[1].innerText === 0;
+  all[0].innerText = 0;
+  all[1].innerText = 0;
 })
 
 
