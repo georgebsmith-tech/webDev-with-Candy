@@ -21,6 +21,7 @@ height: 100vh;
 display: none !important;
 }
 
+
 .show {
     display: contents !important;
     display: flex;
@@ -115,7 +116,7 @@ border-radius: 6px;
     color: red;
     /* margin-bottom: 50px; */
     font-weight: 600;
-    padding: 150px 100px 20px 100px;
+    padding: 100px 100px 20px 100px;
 
 }
 
@@ -154,3 +155,12 @@ border-radius: 6px;
     align-items: center;
 }
 
+
+.close{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 24px;
+    cursor: pointer;
+    padding-right: 30px;
+    padding-top: 30px;
+}

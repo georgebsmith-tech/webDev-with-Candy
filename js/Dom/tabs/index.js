@@ -7,14 +7,18 @@ let p = document.querySelector("p");
 // ];
 let contents = {
   all: "This is the content for all",
-  old: "This isfor oldschool",
+  old: "This is for oldschool",
   classic: "This is for the classic people",
 };
 
 p.innerText = contents[0];
+let head = document.querySelector("header")
 
 let lis = document.querySelectorAll("li");
 
+
+
+// head.toUpperCase(head)
 // lis.forEach((li, idx) => {
 // //   console.log(li.dataset);
 //   li.addEventListener("click", () => {

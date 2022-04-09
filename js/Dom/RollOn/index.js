@@ -11,7 +11,11 @@ let rollOne = get(".roll-1");
 let enterBox = get(".enter-1");
 let enterBox_2 = get(".enter-2")
 let scoreOne = get(".score-1");
-let all = done(".player-score") 
+let all = done(".player-score");
+let next = done(".player");
+let close = get(".close");
+let contain = done(".form-container");
+let writeName = done(".input");
 
 
 let inputTwoHolder = get(".input-2");
@@ -36,7 +40,7 @@ function final() {
   console.log(scoreOne.innerText)
 
 
-  if (scoreOne.innerText * 1 >= 20) {
+  if (scoreOne.innerText * 1 >= 100) {
     // all.innerText === 0;
     game.innerText = "GAME OVER!!!";
     // game.classList.add("game");
@@ -55,7 +59,7 @@ function final_two() {
 
 //  log(scoreTwo.innerText*1)
 
-  if (scoreTwo.innerText * 1 >= 20) {
+  if (scoreTwo.innerText * 1 >= 100) {
     log("inner")
     game.innerText = "GAME OVER!!!";
     winner.innerText = "PLAYER TWO WINS";
@@ -177,13 +181,26 @@ rollOne.addEventListener("click", () => {
 //   }
 // })
 
-get(".modal").addEventListener("click", () => {
+// get(".modal").addEventListener("click", () => {
 
-  get(".modal").classList.add("hide");
-  all[0].innerText = 0;
+//   get(".modal").classList.add("hide");
+//   all[0].innerText = 0;
+//   all[1].innerText = 0;
+// })
+
+
+close.addEventListener("click", () =>{
+get(".modal").classList.add("hide");
+all[0].innerText = 0;
   all[1].innerText = 0;
-})
-
+  next[0].innerText = "";
+  next[1].innerText = "";
+  contain[0].classList.remove("hide");
+  contain[1].classList.remove("hide");
+  writeName[0].value = "";
+  writeName[1].value = "";
+}
+)
 
 get(".modal>div").addEventListener("click", (e) => {
   e.stopPropagation()

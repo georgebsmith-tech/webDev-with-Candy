@@ -33,6 +33,9 @@ fetch("https://jsonplaceholder.typicode.com/photos")
         p.innerText = item.title;
         li.append(p);
         frag.append(li);
+      };
+       {
+        
       }
     });
     ul.append(frag);
