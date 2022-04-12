@@ -18,21 +18,45 @@ fetch("https://jsonplaceholder.typicode.com/users")
       userHolder.className = "user-holder";
       let p = document.createElement("p");
       p.innerText = item.name;
+      p.className = "first-p";
+
+      let p1 = document.createElement("p");
+      p1.innerText = `Username: ${item.username}`;
 
       let avatarHolder = document.createElement("p");
       avatarHolder.innerText = item.name[0];
 
       avatarHolder.className = "avatar";
       userHolder.append(avatarHolder);
-      userHolder.append(p);
-      let p1 = document.createElement("p");
-      p1.innerText = item.email;
+      // userHolder.append(p);
+
+
+      let p6 = document.createElement("p");
+      p6.innerText = `Email:${item.email}`;
+
       let p2 = document.createElement("p");
-      // p2.innerText = JSON.stringify(item.address);
-      p2.innerText = `Adrees:${item.address.suite}, ${item.address.street}, ${item.address.city}`;
+      p2.innerText = `Address:${item.address.suite}, ${item.address.street}, ${item.address.city}`;
+      
+      
+      let p3 = document.createElement("p");
+      p3.innerText = `Phone: ${item.phone}`;
+
+      let p4 = document.createElement("p");
+      p4.innerText = `Website: ${item.website}`;
+
+      let p5 = document.createElement("p");
+      p5.innerText = `Company: ${item.company.name}, ${item.company.bs}, ${item.company.catchPhrase},`;
+
+
+
       li.append(userHolder);
+      li.append(p);
       li.append(p1);
       li.append(p2);
+      li.append(p3);
+      li.append(p4);
+      li.append(p5);
+      li.append(p6);
       docFrag.append(li);
 
       // let li = document.createElement("li");
