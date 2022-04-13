@@ -4,7 +4,6 @@ console.log(ul);
 fetch("https://jsonplaceholder.typicode.com/users")
   .then((result) => result.json())
   .then((data) => {
-    console.log(data);
     let docFrag = new DocumentFragment();
     data.forEach((item, index) => {
       let div = document.createElement("div");
@@ -30,14 +29,12 @@ fetch("https://jsonplaceholder.typicode.com/users")
       userHolder.append(avatarHolder);
       // userHolder.append(p);
 
-
       let p6 = document.createElement("p");
       p6.innerText = `Email:${item.email}`;
 
       let p2 = document.createElement("p");
       p2.innerText = `Address:${item.address.suite}, ${item.address.street}, ${item.address.city}`;
-      
-      
+
       let p3 = document.createElement("p");
       p3.innerText = `Phone: ${item.phone}`;
 
@@ -47,8 +44,6 @@ fetch("https://jsonplaceholder.typicode.com/users")
       let p5 = document.createElement("p");
       p5.innerText = `Company: ${item.company.name}, ${item.company.bs}, ${item.company.catchPhrase},`;
 
-
-
       li.append(userHolder);
       li.append(p);
       li.append(p1);
@@ -57,6 +52,7 @@ fetch("https://jsonplaceholder.typicode.com/users")
       li.append(p4);
       li.append(p5);
       li.append(p6);
+      document.querySelector("#loader").style.display = "none";
       docFrag.append(li);
 
       // let li = document.createElement("li");

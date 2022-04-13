@@ -3,12 +3,54 @@
   margin: 0;
 }
 
-body{
+@keyframes grow {
+  from {
+    font-size: 10px;
+    color: red;
+    transform: translateY(-100px);
+  }
+  to {
+    font-size: 40px;
+    color: #fff;
+    transform: translateY(0px);
+  }
+}
+@keyframes change {
+  0% {
+    border-radius: 0;
+  }
+
+  50% {
+    border-radius: 30px;
+  }
+  100% {
+    border-radius: 100px;
+  }
+}
+.my-container {
+  animation-name: change;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-iteration-count: 4;
+  background-color: pink;
+  width: 200px;
+  height: 200px;
+
+  font-size: 40px;
+}
+
+.myGrow {
+  animation-name: grow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-iteration-count: 4;
+
+  font-size: 40px;
+}
+
+body {
   background-color: #000;
-  background-image: radial-gradient(
-    rgb(221, 213, 213),
-    rgb(0, 0, 0)
-  );
+  background-image: radial-gradient(rgb(187, 64, 64), rgb(0, 0, 0));
 }
 
 ul {
@@ -16,23 +58,25 @@ ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   box-sizing: border-box;
-  gap:100px;
+  gap: 100px;
   /* margin: 100px 0px; */
-   /* background-color: pink; */
-   
+  /* background-color: pink; */
 }
-main{
+main {
   padding: 50px 70px;
 }
 
 li {
   list-style: none;
-   background-color: #fff;
-   border-radius: 30px;
-   /* transform: scale(1.6);
-   cursor: pointer;
-  transition-duration: 2s; */
-   padding: 20px;
+  background-color: #fff;
+  border-radius: 30px;
+
+  cursor: pointer;
+  transition-duration: 2s;
+  padding: 20px;
+}
+li:hover {
+  transform: scale(1.2);
 }
 
 .avatar {
@@ -48,7 +92,7 @@ li {
   font-weight: 600;
 }
 
-.first-p{
+.first-p {
   font-size: 20px;
   font-weight: 600;
   padding-bottom: 10px;
@@ -57,6 +101,6 @@ li {
 .user-holder {
   display: flex;
   justify-content: center;
-   padding-bottom: 20px;
+  padding-bottom: 20px;
   /* background-color: pink; */
 }
