@@ -56,7 +56,7 @@ function expense(){
 
 
           <section className="add">
-            <div>
+            <div className="trans">
               <h3>
                 Add New Transaction
               </h3>
