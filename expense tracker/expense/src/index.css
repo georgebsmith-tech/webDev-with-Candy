@@ -1,39 +1,114 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
-main{
+.start {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  justify-content: center;
+  background-color: #f2f5f6;
+}
+
+.navi {
+  margin-top: 50px;
+}
+
+.navi > nav > ul {
+  display: flex;
+  column-gap: 50px;
+  justify-content: center;
+}
+
+.navi > nav > ul > li > a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #000;
+}
+
+.navi > nav > ul > li > a:hover {
+  /* background-color: yellowgreen; */
+  color: yellowgreen;
+  /* width: 100px; */
+  /* padding: 5px 0px; */
+  transform: translateY(5px);
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+.aspect {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 70px;
+  margin-bottom: 50px;
+  column-gap: 50px;
+  justify-content: center;
+  text-align: center;
+  row-gap: 35px;
+}
+
+.cover {
+  display: flex;
+  justify-content: center;
+}
+
+.aspect > div:hover {
+  background-color: yellowgreen;
+  border-radius: 10px;
+  border: 1px solid yellowgreen;
+}
+
+.aspect > div {
+  /* width: 100px;
+  height: 100px; */
+  display: flex;
+  border: 2px solid #000;
+  height: 100px;
+  width: 150px;
+  justify-content: center;
+}
+
+.aspect > div > p {
+  display: flex;
+  align-items: center;
+}
+
+main {
   display: flex;
   justify-content: center;
   align-items: center !important;
   height: 100vh;
 }
 
-.tracker{
+.tracker {
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: #f2f5f6;
   width: 500px;
   margin-top: 100px;
-  
+
   /* height: 900px; */
   /* margin: 50px 0px; */
 }
 
-.track{
+.track {
   margin-top: 150px;
-  
+
   display: flex;
   justify-content: center !important;
   flex-direction: column;
@@ -41,11 +116,11 @@ main{
   margin: 0px 20px;
 }
 
-.head{
+.head {
   margin-top: 30px;
 }
 
-.balance{
+.balance {
   display: flex;
   margin-top: 50px;
   justify-content: left;
@@ -54,98 +129,90 @@ main{
   left: 10px;
 }
 
-.balance > p{
+.balance > p {
   font-size: 25px;
   font-weight: bolder;
-  
 }
 
-
-
-.income{
+.income {
   display: flex;
   width: 100%;
   justify-content: space-around;
   border: 1px solid #000;
-
 }
 
-.income > p{
+.income > p {
   padding: 5px;
   font-weight: 600;
 }
 
-.history{
+.history {
   margin: 30px 0px;
   width: 100%;
 }
 
-.history > h3{
+.history > h3 {
   padding: 10px 0px;
   border-bottom: 1px solid #000;
 }
 
-.items{
+.items {
   margin: 10px;
   margin-top: 25px;
 
   display: flex;
   flex-direction: column;
   row-gap: 20px;
-
 }
 
-.flower{
+.flower {
   display: flex;
   justify-content: space-between;
   border: 1px solid grey;
   padding: 10px;
   border-radius: 10px;
   font-weight: bold;
-
 }
 
-.one{
+.one {
   border-right: 4px solid red;
 }
 
-.two{
+.two {
   border-right: 4px solid green;
 }
 
-.three{
+.three {
   border-right: 4px solid red;
-
 }
 
-.four{
+.four {
   border-right: 4px solid green;
 }
 
-.add{
+.add {
   margin: 30px 0px;
   width: 100%;
-
 }
 
-.trans > h3{
-margin-bottom: 20px;
+.trans > h3 {
+  margin-bottom: 20px;
   border-bottom: 2px solid #000;
 }
 
 .trance {
-margin: 10px;
+  margin: 10px;
 }
 
-.enter{
+.enter {
   margin-bottom: 25px;
 }
 
-.enter > p{
-padding-bottom: 10px;
+.enter > p {
+  padding-bottom: 10px;
 }
 
-.enter > input{
+.enter > input {
   width: 100%;
   height: 25px;
   font-size: 16px;
@@ -153,29 +220,27 @@ padding-bottom: 10px;
   outline: none;
 }
 
-.quantity{
+.quantity {
   width: 100%;
 }
 
-.quantity > p{
-font-size: 18px;
-margin-bottom: 10px;
-
+.quantity > p {
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
-.quantity > input{
+.quantity > input {
   width: 100%;
   outline: none;
   height: 25px;
   padding-left: 10px;
 }
 
-.butt{
+.butt {
   margin-top: 25px;
-
 }
 
-.butt > button{
+.butt > button {
   width: 100%;
   height: 30px;
   background-color: purple;
@@ -184,6 +249,6 @@ margin-bottom: 10px;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }

@@ -1,95 +1,113 @@
-function expense(){
-  return(
+import React from "react";
+import Aspect from "./components/Aspect";
 
+function Grid() {
+  return (
     <main>
-      <div className="tracker">
-        <div className="track">
-
-          <h2 className="head">Expense Tracker</h2>
-
-
-          <div className="balance">
-            <h5>
-              YOUR BALANCE
-            </h5>
-            <p>
-              N420.00
-            </p>
-          </div>
-
-            <div className="income">
-              <p>
-                INCOME<br/>
-                N450
-              </p>
-              <p>
-                EXPENSE<br/>
-                N30
-              </p>
-            </div>
-          
-          <section className="history">
-            <h3>
-              History
-            </h3>
-
-            <div className="items">
-              <div className="flower one">
-                <p>Flower</p>
-                <p>-N20</p>
-              </div>
-
-              <div className="flower two">
-                <p>Salary</p>
-                <p>-N300</p>
-              </div>
-
-              <div className="flower three">
-                <p>Book</p>
-                <p>-N10</p>
-              </div>
-
-              <div className="flower four">
-                <p>Camera</p>
-                <p>-N150</p>
-              </div>
-            </div>
-          </section>
-
-
-          <section className="add">
-            <div className="trans">
-              <h3>
-                Add New Transaction
-              </h3>
-              <div className="trance">
-                <div className="enter">
-                  <p>Text</p>
-                  <input type="text" placeholder="Enter text"/>
-                </div>
-                
-                <div className="quantity">
-                  <p>Amount</p>
-                  <p>
-                    (negative - expense, positive - income)
-                  </p>
-                  <input type="text" placeholder="0"/>
-                </div>
-
-                <div className="butt">
-                  <button>
-                    Add Transaction
-                  </button>
-                </div>
-              </div>
-            </div>
-          </section>
-
-
+      <section className="start">
+        <div className="navi">
+          <nav>
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-      </div>
+
+        <div className="cover">
+          <Aspect />
+        </div>
+      </section>
     </main>
   );
 }
 
-export default expense;
+export default Grid;
+
+// import Item from "./components/Item";
+// import { useState } from "react";
+// import Check from "./components/Balance";
+
+// function Expense() {
+//   const [income, setIncome] = useState(0);
+//   const [text, setText] = useState("");
+
+//   const [expenses, setExpenses] = useState(0);
+//   const [items, setItems] = useState([]);
+
+//   const [amount, setAmount] = useState("");
+
+//   const updateValue = () => {
+//     if (amount[0] === "-") {
+//       setExpenses(amount.substr(1) * 1 + expenses * 1);
+//     } else {
+//       setIncome(amount * 1 + income * 1);
+//     }
+//     setItems([...items, { text: text, price: amount }]);
+//     setAmount("");
+//     setText("");
+//   };
+
+//   return (
+//     <main>
+//       <div className="tracker">
+//         <div className="track">
+//           <h2 className="head">Expense Tracker</h2>
+
+//           <Check income={income} expenses={expenses} />
+
+//           <section className="history">
+//             <h3>History</h3>
+
+//             <div className="items">
+//               {items.map((item) => (
+//                 <Item text={item.text} price={item.price} />
+//               ))}
+//             </div>
+//           </section>
+
+//           <section className="add">
+//             <div className="trans">
+//               <h3>Add New Transaction</h3>
+//               <div className="trance">
+//                 <div className="enter">
+//                   <p>Text</p>
+//                   <input
+//                     value={text}
+//                     onChange={(e) => setText(e.target.value)}
+//                     type="text"
+//                     placeholder="Enter text"
+//                   />
+//                 </div>
+
+//                 <div className="quantity">
+//                   <p>Amount</p>
+//                   <p>(negative - expense, positive - income)</p>
+//                   <input
+//                     value={amount}
+//                     onChange={(e) => setAmount(e.target.value)}
+//                     type="text"
+//                     placeholder="0"
+//                   />
+//                 </div>
+
+//                 <div className="butt">
+//                   <button onClick={updateValue}>Add Transaction</button>
+//                 </div>
+//               </div>
+//             </div>
+//           </section>
+//         </div>
+//       </div>
+//     </main>
+//   );
+// }
+
+// export default Expense;
