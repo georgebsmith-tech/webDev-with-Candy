@@ -5,6 +5,8 @@ function expense(){
       <div className="tracker">
         <div className="track">
 
+          <h2 className="head">Expense Tracker</h2>
+
 
           <div className="balance">
             <h5>
@@ -60,21 +62,21 @@ function expense(){
               <h3>
                 Add New Transaction
               </h3>
-              <div>
-                <div>
-                  <p>Text</p><br/>
+              <div className="trance">
+                <div className="enter">
+                  <p>Text</p>
                   <input type="text" placeholder="Enter text"/>
                 </div>
                 
-                <div>
-                  <p>Amount</p><br/>
+                <div className="quantity">
+                  <p>Amount</p>
                   <p>
                     (negative - expense, positive - income)
                   </p>
                   <input type="text" placeholder="0"/>
                 </div>
 
-                <div>
+                <div className="butt">
                   <button>
                     Add Transaction
                   </button>
