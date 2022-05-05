@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import Aspect from "./components/Aspect";
+import Cardlayout, { DoIt, DoIt2 as Do } from "./components/cardlayout";
 
 function Grid() {
   return (
@@ -29,7 +30,61 @@ function Grid() {
   );
 }
 
-export default Grid;
+// export default Grid;
+
+// new design on children and more
+
+function MyApp() {
+  const [tab, setTab] = useState(0);
+  const [name, setName] = useState("");
+
+  let content;
+  if (tab === 0) {
+    content = (
+      <div style={{ display: "flex" }}>
+        <Cardlayout>
+          <h1>My header</h1>
+          <p>some text</p>
+        </Cardlayout>
+        <Cardlayout>
+          <p> Some text</p>
+          <ul>
+            <li>item 1</li>
+          </ul>
+        </Cardlayout>
+        <Cardlayout />
+        <DoIt />
+        <Do />
+      </div>
+    );
+  } else {
+    content = (
+      <div style={{ fontSize: 100 }}>
+        <p>This is for places</p>
+        <input
+          placeholder="Your Name"
+          onChange={(e) => setName(e.target.value)}
+          value={name}
+        />
+        <button>Submit</button>
+        {name && <p>Your name is {name}</p>}
+      </div>
+    );
+  }
+
+  return (
+    <div>
+      <ul>
+        <li onClick={() => setTab(1)}>Places</li>
+        <li onClick={() => setTab(0)}>Pictures</li>
+      </ul>
+
+      {content}
+    </div>
+  );
+}
+
+export default MyApp;
 
 // import Item from "./components/Item";
 // import { useState } from "react";
