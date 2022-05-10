@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #E5E5E5;
 }
 
 * {
@@ -247,6 +248,68 @@ main {
   border: 1px solid purple;
   font-size: 18px;
 }
+
+
+.chart{
+  background-color: #fff;
+  width: 700px;
+  
+  
+}
+
+.holds{
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.segment{
+  display: flex;
+  column-gap: 30px;
+}
+
+.butts{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.butts > button > a{
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+}
+
+
+.butts > button {
+  width: 80%;
+  height: 40px;
+  background: #125252;
+  border: 1px solid #125252;
+  
+}
+.grocery{
+font-size: 12px;
+}
+
+.value{
+  color: red;
+font-size: 12px;
+}
+
+.foreign{
+  font-weight: 600;
+}
+
+
+.rice{
+  background-color: #f2f5f6;
+  width: 100px;
+  border-radius: 15px;
+}
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

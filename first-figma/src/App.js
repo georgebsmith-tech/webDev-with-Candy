@@ -36,4 +36,19 @@ function App() {
   );
 }
 
-export default App;
+// export default App;
+
+
+import {useState} from "react";
+function Figma(){
+  return(
+    <main>
+      <section className="background">
+        
+
+      </section>
+    </main>
+  )
+};
+
+export default Figma;

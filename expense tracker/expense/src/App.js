@@ -1,90 +1,176 @@
 import React, { useState } from "react";
-import Aspect from "./components/Aspect";
-import Cardlayout, { DoIt, DoIt2 as Do } from "./components/cardlayout";
+// import React, {Component} from "react";
+// import Aspect from "./components/Aspect";
+// import Cardlayout, { DoIt, DoIt2 as Do } from "./components/cardlayout";
 
-function Grid() {
-  return (
+// function Grid() {
+//   return (
+//     <main>
+//       <section className="start">
+//         <div className="navi">
+//           <nav>
+//             <ul>
+//               <li>
+//                 <a href="#">Home</a>
+//               </li>
+//               <li>
+//                 <a href="#">About</a>
+//               </li>
+//               <li>
+//                 <a href="#">Contact</a>
+//               </li>
+//             </ul>
+//           </nav>
+//         </div>
+
+//         <div className="cover">
+//           <Aspect />
+//         </div>
+//       </section>
+//     </main>
+//   );
+// }
+
+// // export default Grid;
+
+// // new design on children and more
+
+// function MyApp() {
+//   const [tab, setTab] = useState(0);
+//   const [name, setName] = useState("");
+
+//   let content;
+//   if (tab === 0) {
+//     content = (
+//       <div style={{ display: "flex" }}>
+//         <Cardlayout>
+//           <h1>My header</h1>
+//           <p>some text</p>
+//         </Cardlayout>
+//         <Cardlayout>
+//           <p> Some text</p>
+//           <ul>
+//             <li>item 1</li>
+//           </ul>
+//         </Cardlayout>
+//         <Cardlayout />
+//         <DoIt />
+//         <Do />
+//       </div>
+//     );
+//   } else {
+//     content = (
+//       <div style={{ fontSize: 100 }}>
+//         <p>This is for places</p>
+//         <input
+//           placeholder="Your Name"
+//           onChange={(e) => setName(e.target.value)}
+//           value={name}
+//         />
+//         <button>Submit</button>
+//         {name && <p>Your name is {name}</p>}
+//       </div>
+//     );
+//   }
+
+//   return (
+//     <div>
+//       <ul>
+//         <li onClick={() => setTab(1)}>Places</li>
+//         <li onClick={() => setTab(0)}>Pictures</li>
+//       </ul>
+
+//       {content}
+//     </div>
+//   );
+// }
+
+// export default MyApp;
+
+
+
+
+function myCart(){
+  return(
     <main>
-      <section className="start">
-        <div className="navi">
-          <nav>
-            <ul>
-              <li>
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#">About</a>
-              </li>
-              <li>
-                <a href="#">Contact</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+      <section className="chart"> 
 
-        <div className="cover">
-          <Aspect />
+      {/* <h3>My Cart</h3> */}
+        <div className="holds">
+        <h3>My Cart</h3>
+          <div className="segment">
+            <div className="rice">
+              <img src="/rice.svg"></img>
+            </div>
+
+            <div>
+              <p className="foreign">
+Foreign perboiled rice 500g
+</p><br/><br/>
+<p className="grocery">Vegetable<br/>
+<span className="value">N950</span>
+</p>
+            </div>
+          </div>
+          
+
+          <div className="segment">
+            <div className="rice">
+              <img src="/rice.svg"></img>
+            </div>
+
+            <div>
+              <p className="foreign">
+Foreign perboiled rice 500g
+</p><br/><br/>
+<p className="grocery">Vegetable<br/>
+<span className="value">N950</span>
+</p>
+            </div>
+          </div>
+          
+
+          <div className="segment">
+            <div className="rice">
+              <img src="/rice.svg"></img>
+            </div>
+
+            <div>
+              <p className="foreign">
+Foreign perboiled rice 500g
+</p><br/><br/>
+<p className="grocery">Vegetable<br/>
+<span className="value">N950</span>
+</p>
+            </div>
+          </div>
+          
+
+          <div className="segment">
+            <div className="rice">
+              <img src="/rice.svg"></img>
+            </div>
+
+            <div>
+              <p className="foreign">
+Foreign perboiled rice 500g
+</p><br/><br/>
+<p className="grocery">Vegetable<br/>
+<span className="value">N950</span>
+</p>
+            </div>
+          </div>
+          <div className="butts">
+            <button><a href="#">Proceed to Checkout</a></button>
+          </div>
         </div>
       </section>
     </main>
-  );
+  )
 }
 
-// export default Grid;
+export default myCart;
 
-// new design on children and more
-
-function MyApp() {
-  const [tab, setTab] = useState(0);
-  const [name, setName] = useState("");
-
-  let content;
-  if (tab === 0) {
-    content = (
-      <div style={{ display: "flex" }}>
-        <Cardlayout>
-          <h1>My header</h1>
-          <p>some text</p>
-        </Cardlayout>
-        <Cardlayout>
-          <p> Some text</p>
-          <ul>
-            <li>item 1</li>
-          </ul>
-        </Cardlayout>
-        <Cardlayout />
-        <DoIt />
-        <Do />
-      </div>
-    );
-  } else {
-    content = (
-      <div style={{ fontSize: 100 }}>
-        <p>This is for places</p>
-        <input
-          placeholder="Your Name"
-          onChange={(e) => setName(e.target.value)}
-          value={name}
-        />
-        <button>Submit</button>
-        {name && <p>Your name is {name}</p>}
-      </div>
-    );
-  }
-
-  return (
-    <div>
-      <ul>
-        <li onClick={() => setTab(1)}>Places</li>
-        <li onClick={() => setTab(0)}>Pictures</li>
-      </ul>
-
-      {content}
-    </div>
-  );
-}
-
-export default MyApp;
 
 // import Item from "./components/Item";
 // import { useState } from "react";
