@@ -87,32 +87,29 @@ import React, { useState } from "react";
 
 // export default MyApp;
 
-
-
-
-function myCart(){
-  return(
+function myCart() {
+  return (
     <main>
-      <section className="chart"> 
-
-      {/* <h3>My Cart</h3> */}
+      <section className="chart">
+        {/* <h3>My Cart</h3> */}
         <div className="holds">
-        <h3>My Cart</h3>
+          <h3>My Cart</h3>
           <div className="segment">
             <div className="rice">
               <img src="/rice.svg"></img>
             </div>
 
             <div>
-              <p className="foreign">
-Foreign perboiled rice 500g
-</p><br/><br/>
-<p className="grocery">Vegetable<br/>
-<span className="value">N950</span>
-</p>
+              <p className="foreign">Foreign perboiled rice 500g</p>
+              <br />
+              <br />
+              <p className="grocery">
+                Vegetable
+                <br />
+                <span className="value">N950</span>
+              </p>
             </div>
           </div>
-          
 
           <div className="segment">
             <div className="rice">
@@ -120,15 +117,16 @@ Foreign perboiled rice 500g
             </div>
 
             <div>
-              <p className="foreign">
-Foreign perboiled rice 500g
-</p><br/><br/>
-<p className="grocery">Vegetable<br/>
-<span className="value">N950</span>
-</p>
+              <p className="foreign">Foreign perboiled rice 500g</p>
+              <br />
+              <br />
+              <p className="grocery">
+                Vegetable
+                <br />
+                <span className="value">N950</span>
+              </p>
             </div>
           </div>
-          
 
           <div className="segment">
             <div className="rice">
@@ -136,15 +134,16 @@ Foreign perboiled rice 500g
             </div>
 
             <div>
-              <p className="foreign">
-Foreign perboiled rice 500g
-</p><br/><br/>
-<p className="grocery">Vegetable<br/>
-<span className="value">N950</span>
-</p>
+              <p className="foreign">Foreign perboiled rice 500g</p>
+              <br />
+              <br />
+              <p className="grocery">
+                Vegetable
+                <br />
+                <span className="value">N950</span>
+              </p>
             </div>
           </div>
-          
 
           <div className="segment">
             <div className="rice">
@@ -152,25 +151,28 @@ Foreign perboiled rice 500g
             </div>
 
             <div>
-              <p className="foreign">
-Foreign perboiled rice 500g
-</p><br/><br/>
-<p className="grocery">Vegetable<br/>
-<span className="value">N950</span>
-</p>
+              <p className="foreign">Foreign perboiled rice 500g</p>
+              <br />
+              <br />
+              <p className="grocery">
+                Vegetable
+                <br />
+                <span className="value">N950</span>
+              </p>
             </div>
           </div>
           <div className="butts">
-            <button><a href="#">Proceed to Checkout</a></button>
+            <button>
+              <a href="#">Proceed to Checkout</a>
+            </button>
           </div>
         </div>
       </section>
     </main>
-  )
+  );
 }
 
 export default myCart;
-
 
 // import Item from "./components/Item";
 // import { useState } from "react";
