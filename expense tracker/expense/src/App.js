@@ -110,7 +110,12 @@ import Fig from "./components/FigComponent";
 
 // export default MyApp;
 
-function myCart() {
+function MyCart() {
+  const products = [
+    { price: 900, cat: "Rice" },
+    { price: 830, cat: "Spaghetti" },
+    { price: 30, cat: "Bean" },
+  ];
   return (
     <main>
       <section className="chart">
@@ -119,10 +124,17 @@ function myCart() {
         <section className="grid-two">
           {/* <div className="holds"> */}
           {/* <h3>My Cart</h3> */}
-          <Fig price={430} item="Rice" />
-          <Fig price={830} item="Spaghetti" />
-          <Fig price={230} item="Beans" />
+          {products.map((product) => (
+            <Fig price={product.price} item={product.cat} />
+          ))}
+
+          {/* <Fig price={630} item="Peanuts" />
           <Fig price={630} item="Peanuts" />
+
+          <Fig price={630} item="Peanuts" />
+          <Fig price={630} item="Peanuts" />
+          <Fig price={630} item="Peanuts" /> */}
+
           {/* </div> */}
         </section>
 
@@ -136,7 +148,7 @@ function myCart() {
   );
 }
 
-export default myCart;
+export default MyCart;
 
 // import Item from "./components/Item";
 // import { useState } from "react";
