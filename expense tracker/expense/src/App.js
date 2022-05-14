@@ -115,6 +115,7 @@ function myCart() {
     <main>
       <section className="chart">
         {/* <h3>My Cart</h3> */}
+
         <section className="grid-two">
           {/* <div className="holds"> */}
           {/* <h3>My Cart</h3> */}
