@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 * {
@@ -249,67 +249,145 @@ main {
   font-size: 18px;
 }
 
-
-.chart{
+.chart {
   background-color: #fff;
-  width: 700px;
-  
-  
+  width: 900px;
 }
 
-.holds{
+.holds {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  /* margin-bottom: 30px; */
+}
+
+/* .holds {
   margin: 50px;
   display: flex;
   flex-direction: column;
   row-gap: 30px;
-}
+} */
 
-.segment{
+.other {
   display: flex;
-  column-gap: 30px;
+  flex-direction: column;
+  row-gap: 30px;
+}
+*/ .segment {
+  display: flex;
+  /* column-gap: 30px; */
 }
 
-.butts{
+.butts {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  margin-bottom: 50px;
 }
 
-.butts > button > a{
+.butts > button > a {
   text-decoration: none;
   font-size: 14px;
   color: #fff;
 }
 
-
 .butts > button {
-  width: 80%;
+  width: 50%;
   height: 40px;
   background: #125252;
   border: 1px solid #125252;
-  
 }
-.grocery{
-font-size: 12px;
+.grocery {
+  font-size: 12px;
 }
 
-.value{
+.value {
   color: red;
-font-size: 12px;
+  font-size: 12px;
 }
 
-.foreign{
+.foreign {
   font-weight: 600;
+  /* font-size: 24px; */
 }
 
-
-.rice{
+.rice {
   background-color: #f2f5f6;
   width: 100px;
   border-radius: 15px;
 }
 
+.grid-two {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 40px;
+  row-gap: 50px;
+  /* gap: 50px; */
+  /* display: flex; */
+  /* flex-direction: column; */
+}
 
+.images {
+  display: flex;
+  column-gap: 30px;
+}
+
+.image-first {
+  background-color: #f4f4f4;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+}
+
+.image-first > img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-second {
+  background-color: #125252;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+}
+
+.image-second > img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arithemetric {
+  display: flex;
+  column-gap: 50px;
+}
+
+.save {
+  display: flex;
+  column-gap: 10px;
+}
+
+.delete {
+  display: flex;
+  column-gap: 10px;
+}
+
+.delete > img {
+  width: 18.46px;
+  height: 20px;
+}
+
+.font {
+  display: flex;
+  column-gap: 50px;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

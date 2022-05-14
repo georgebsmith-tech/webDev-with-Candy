@@ -1,7 +1,30 @@
 import React, { useState } from "react";
+import Fig from "./components/FigComponent";
 // import React, {Component} from "react";
 // import Aspect from "./components/Aspect";
 // import Cardlayout, { DoIt, DoIt2 as Do } from "./components/cardlayout";
+
+// if (checkBalance === true){
+
+//   if (isActive ===true && balance > 0){
+//      console.log("Your balance is $" + balance.toFixed(2) + ".");
+//  }
+//   else if ( isActive === false ){
+//      console.log("Your account is no longer active.");
+//  }
+
+//  else if ( isActive=== true && balance === 0){
+//      console.log("Your account is empty");
+//  }
+//  else if (isActive === true && balance < 0){
+//      console.log("Your account negative. Please contact bank");
+//  }
+//  }
+//     else{ console.log("Thank you Have a nice day!");}
+
+// if (flavor === "vanilla" || flavor === "chocolate" && vessel === "cone" || vessel === "bowl" && toppings === "sprinkles" || toppings === "peanuts" ) {
+//   console.log(""I'd like two scoops of" + flavor + "ice cream in a" + vessel + "with" + toppings + ".")
+// }
 
 // function Grid() {
 //   return (
@@ -87,90 +110,32 @@ import React, { useState } from "react";
 
 // export default MyApp;
 
-
-
-
-function myCart(){
-  return(
+function myCart() {
+  return (
     <main>
-      <section className="chart"> 
-
-      {/* <h3>My Cart</h3> */}
-        <div className="holds">
-        <h3>My Cart</h3>
-          <div className="segment">
-            <div className="rice">
-              <img src="/rice.svg"></img>
-            </div>
-
-            <div>
-              <p className="foreign">
-Foreign perboiled rice 500g
-</p><br/><br/>
-<p className="grocery">Vegetable<br/>
-<span className="value">N950</span>
-</p>
-            </div>
+      <section className="chart">
+        {/* <h3>My Cart</h3> */}
+        <section className="grid-two">
+          <div className="holds">
+            {/* <h3>My Cart</h3> */}
+            <Fig price={430} />
+            <Fig />
+            <Fig />
+            <Fig />
           </div>
-          
+        </section>
 
-          <div className="segment">
-            <div className="rice">
-              <img src="/rice.svg"></img>
-            </div>
-
-            <div>
-              <p className="foreign">
-Foreign perboiled rice 500g
-</p><br/><br/>
-<p className="grocery">Vegetable<br/>
-<span className="value">N950</span>
-</p>
-            </div>
-          </div>
-          
-
-          <div className="segment">
-            <div className="rice">
-              <img src="/rice.svg"></img>
-            </div>
-
-            <div>
-              <p className="foreign">
-Foreign perboiled rice 500g
-</p><br/><br/>
-<p className="grocery">Vegetable<br/>
-<span className="value">N950</span>
-</p>
-            </div>
-          </div>
-          
-
-          <div className="segment">
-            <div className="rice">
-              <img src="/rice.svg"></img>
-            </div>
-
-            <div>
-              <p className="foreign">
-Foreign perboiled rice 500g
-</p><br/><br/>
-<p className="grocery">Vegetable<br/>
-<span className="value">N950</span>
-</p>
-            </div>
-          </div>
-          <div className="butts">
-            <button><a href="#">Proceed to Checkout</a></button>
-          </div>
+        <div className="butts">
+          <button>
+            <a href="#">Proceed to Checkout</a>
+          </button>
         </div>
       </section>
     </main>
-  )
+  );
 }
 
 export default myCart;
-
 
 // import Item from "./components/Item";
 // import { useState } from "react";
