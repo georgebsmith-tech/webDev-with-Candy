@@ -13,17 +13,20 @@ export default function Fig(props) {
           <br />
           <br />
           <p className="grocery">
-            Vegetable
+            {props.item}
             <br />
-            <span className="value">N{props.pricecd}</span>
+            <span className="value">N{props.price}</span>
           </p>
         </div>
       </div>
 
-      <div className="shape">
+      <div className="part">
         <div className="arithemetric">
           <div className="image-first">
             <img src="/minus sign.svg" />
+          </div>
+          <div>
+            <p>10</p>
           </div>
           <div className="image-second">
             <img src="/increment.svg" />

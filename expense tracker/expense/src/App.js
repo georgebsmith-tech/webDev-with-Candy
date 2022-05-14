@@ -116,13 +116,13 @@ function myCart() {
       <section className="chart">
         {/* <h3>My Cart</h3> */}
         <section className="grid-two">
-          <div className="holds">
-            {/* <h3>My Cart</h3> */}
-            <Fig price={430} />
-            <Fig />
-            <Fig />
-            <Fig />
-          </div>
+          {/* <div className="holds"> */}
+          {/* <h3>My Cart</h3> */}
+          <Fig price={430} item="Rice" />
+          <Fig price={830} item="Spaghetti" />
+          <Fig price={230} item="Beans" />
+          <Fig price={630} item="Peanuts" />
+          {/* </div> */}
         </section>
 
         <div className="butts">
