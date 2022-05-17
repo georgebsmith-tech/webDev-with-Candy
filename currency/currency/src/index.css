@@ -19,14 +19,14 @@ code {
 
 main {
   display: flex;
-  height: 100vh;
+  /* height: 100vh; */
   width: 100vw;
   /* justify-content: center; */
 }
 
 .white {
   display: flex;
-  height: 100vh;
+  /* height: 100vh; */
   width: 100vw;
   justify-content: center;
 }
@@ -34,12 +34,14 @@ main {
 .overview {
   background: #e5e5e5;
   display: flex;
-  width: 1000px;
+  /* width: 1000px; */
   flex-direction: column;
   align-items: center;
   /* justify-content: center; */
-  height: 150vh;
+  /* height: 150vh; */
   margin-top: 100px;
+  padding-bottom: 30px;
+  padding: 5vw;
 }
 img {
   width: 100%;
@@ -47,24 +49,31 @@ img {
 }
 
 .blue-image {
-  background-image: url("../public/Rectangle.svg");
+  /* background-image: url("../public/Rectangle.svg");
+
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   /* background-position: center; */
+  background-color: #007bff;
   object-fit: contain;
   border-radius: 20px;
   z-index: 5;
-  width: 800px;
-  height: 500px;
+  /* width: 800px; */
+  /* height: 500px; */
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
   margin-top: 70px;
+  /* padding: 200px; */
+  padding-top: 50px;
+  padding-bottom: 30px;
+  width: 100%;
 }
 
 .holder {
-  height: 350px;
+  background-color: red;
+  width: 100%;
 }
 
 .fiat {
@@ -124,7 +133,7 @@ img {
 .total {
   background-color: #fff;
   border-radius: 15px;
-  width: 400px;
+  /* width: 400px; */
 }
 
 .twoparts {
@@ -167,9 +176,10 @@ img {
 
 .dodge {
   background-color: #fff;
-  width: 830px;
+  /* width: 830px; */
+  padding: 20px 0;
   /* height: ; */
-  margin-top: 40px;
+  margin-top: 10px;
 }
 
 .svg {
@@ -178,10 +188,12 @@ img {
 
 .percent {
   display: flex;
+  column-gap: 120px;
   margin: 40px;
   padding-bottom: 10px;
   border-bottom: 1px solid #000;
   justify-content: space-between;
+  /* width: 100%; */
 }
 
 /* .percent > div {

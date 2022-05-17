@@ -1,14 +1,14 @@
 import React from "react";
 
-export default function Btc(props) {
+export default function Btc({ coin, image = "btc 1", color }) {
   return (
     <section className="percent">
       <div className="dobs">
         <div className="svg">
-          <img src="/btc 1.svg" />
+          <img src={`/${image}.svg`} />
         </div>
         <div className="tbt">
-          <p>BTC</p>
+          <p style={{ color }}>{coin}</p>
         </div>
       </div>
       <div className="ngn">
