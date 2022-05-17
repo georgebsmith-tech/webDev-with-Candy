@@ -1,0 +1,9 @@
+def myRound(x):
+    if(x>0.99):
+        return round(x,1)
+    else:
+        return 0
+
+    
+
+df[yourColumn].apply(myRound)
