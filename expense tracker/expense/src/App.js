@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Fig from "./components/FigComponent";
+
 // import React, {Component} from "react";
 // import Aspect from "./components/Aspect";
 // import Cardlayout, { DoIt, DoIt2 as Do } from "./components/cardlayout";

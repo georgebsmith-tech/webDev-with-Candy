@@ -1,0 +1,242 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  /* justify-content: center; */
+}
+
+.white {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+}
+
+.overview {
+  background: #e5e5e5;
+  display: flex;
+  width: 1000px;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  height: 150vh;
+  margin-top: 100px;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.blue-image {
+  background-image: url("../public/Rectangle.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  object-fit: contain;
+  border-radius: 20px;
+  z-index: 5;
+  width: 800px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  margin-top: 70px;
+}
+
+.holder {
+  height: 350px;
+}
+
+.fiat {
+  /* height: 300px; */
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fiat > h2 {
+  font-size: 48px;
+  color: #fff;
+}
+
+.fiat > p {
+  font-size: 24px;
+  color: #fff;
+}
+
+.sell {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 200px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0065ff;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.buy {
+  margin-top: 30px;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  /* margin: 20px; */
+}
+
+.mine {
+  display: flex;
+}
+.three {
+  display: flex;
+  column-gap: 20px;
+}
+
+.find {
+  /* margin-bottom: 50px; */
+  display: flex;
+}
+
+.total {
+  background-color: #fff;
+  border-radius: 15px;
+  width: 400px;
+}
+
+.twoparts {
+  display: flex;
+  column-gap: 30px;
+  margin-top: 20px;
+}
+
+.validate {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+}
+
+.cryptocurrencies {
+  display: flex;
+  justify-content: center;
+}
+
+.naira {
+  display: flex;
+  margin-top: 20px;
+}
+
+.naira > h4 {
+  color: #0065ff;
+  line-height: 31px;
+  padding-top: 10px;
+  font-size: 24px;
+}
+
+.naira > p {
+  font-size: 36px;
+  font-weight: 600;
+  color: #7c7474;
+  line-height: 46px;
+}
+
+.dodge {
+  background-color: #fff;
+  width: 830px;
+  /* height: ; */
+  margin-top: 40px;
+}
+
+.svg {
+  width: 30px;
+}
+
+.percent {
+  display: flex;
+  margin: 40px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000;
+  justify-content: space-between;
+}
+
+/* .percent > div {
+} */
+
+.dobs {
+  display: flex;
+  /* flex-direction: column; */
+  column-gap: 20px;
+  justify-content: flex-start;
+}
+
+.tbt > p {
+  font-weight: 600;
+  color: #fc7e00;
+  font-size: 24px;
+}
+
+.ngn > p {
+  color: #cbc9c9;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.polygon {
+  display: flex;
+}
+
+.polygon > div {
+  width: 12px;
+  height: 12px;
+}
+
+.polygon > p {
+  font-size: 14px;
+  color: #00ff66;
+}
+
+.token {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.token > button > a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.token > button {
+  width: 198px;
+  height: 60px;
+  background-color: #0065ff;
+  border-radius: 10px;
+  border: 1px solid #0065ff;
+}

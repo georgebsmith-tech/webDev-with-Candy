@@ -1,6 +1,17 @@
 import React, { useState } from "react";
 
 export default function Fig(props) {
+  let [count, setCount] = useState(0);
+
+  function plus() {
+    setCount(count + 1);
+    //  var count <= 10;
+  }
+
+  function minus() {
+    setCount(count - 1);
+  }
+
   return (
     <div className="segment">
       <div className="images">
@@ -22,13 +33,13 @@ export default function Fig(props) {
 
       <div className="part">
         <div className="arithemetric">
-          <div className="image-first">
+          <div className="image-first" onClick={minus}>
             <img src="/minus sign.svg" />
           </div>
           <div>
-            <p>10</p>
+            <p>{count}</p>
           </div>
-          <div className="image-second">
+          <div className="image-second" onClick={plus}>
             <img src="/increment.svg" />
           </div>
         </div>
