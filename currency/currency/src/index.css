@@ -56,14 +56,16 @@ code {
 
 .boxhold {
   display: flex;
-  margin-top: 25px;
+  margin-top: 10px;
+  height: 54px;
+  width: 200px;
 }
 
 .boxhold:hover {
   background-color: #d3e3fb;
-  width: 200px;
+
   cursor: pointer;
-  height: 54px;
+
   border-radius: 20px;
   color: #0065ff;
 }
@@ -71,9 +73,10 @@ code {
 .boxes {
   display: flex;
   width: 100%;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   column-gap: 10px;
+  padding-left: 15px;
 }
 
 .boxes > img {
@@ -98,8 +101,8 @@ code {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  width: 150px;
-  height: 50px;
+  width: 222px;
+  height: 169px;
 }
 
 .peerimage {
@@ -398,7 +401,7 @@ img {
 .help {
   border: 3px solid #cbc9c9;
   margin-top: 100px;
-  width: 400px;
+  /* width: 400px; */
 }
 
 .few {

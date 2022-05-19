@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Graph() {
   return (
-    <section className="history">
+    <section>
       <div>
         <h4 className="hiss">Price History</h4>
       </div>
