@@ -1,11 +1,13 @@
 import React from "react";
 
-export default function Myfunds(props) {
+export default function Myfunds({ type, image }) {
   return (
     <section className="buy">
       <div className="sell">
-        {props.type}
-        <img src="/deposit 1.svg" />
+        <div className="deposit-type">
+          <img src={`/${image}.svg`} className="deposit-type" />
+        </div>
+        {type}
       </div>
     </section>
   );

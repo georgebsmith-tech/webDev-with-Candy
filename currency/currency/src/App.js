@@ -4,6 +4,9 @@ import Myfunds from "./components/fund";
 import Current from "./components/current";
 import Btc from "./components/Btc";
 import Token from "./components/Token";
+import Polygon from "./components/polygon";
+import Dashpart from "./components/Dashpart";
+import Graph from "./components/Graph";
 
 const Top = () => {
   return (
@@ -12,11 +15,11 @@ const Top = () => {
         <p>Your Fiat Balance</p>
         <h2>NGN35,000</h2>
         <section className="three">
-          <Myfunds type="Deposit" style="color: blue" />
+          <Myfunds image="deposit 1" type="Deposit" />
 
-          <Myfunds type="Buy/Sell" />
+          <Myfunds image="buy sell 1" type="Buy/Sell" />
 
-          <Myfunds type="Withdraw" />
+          <Myfunds image="Layer 1" type="Withdraw" />
         </section>
       </div>
       {/* </div> */}
@@ -32,6 +35,7 @@ const Middle = () => {
       </div>
       <div>
         <Current value={36} />
+        <Polygon />
       </div>
     </section>
   );
@@ -44,9 +48,10 @@ const Bottom = () => {
       <section className="dodge">
         <Btc coin="BTC" image="btc 1" color="" />
         <Btc coin="ETH" image="eth 1" color="rgba(69, 74, 117, 1)" />
-        <Btc />
-        <Btc />
-        <Btc />
+        <Btc coin="USDT" image="usdt 1" color="#53AE94" />
+        <Btc coin="XRP" image="xrp 1" color="#0D0E0F" />
+        <Btc coin="DOGE" image="doge 1" color="#C2A633" />
+        <Btc coin="EOS" image="eos 1" color="#000000" />
         <Token />
       </section>
     </div>
@@ -56,17 +61,21 @@ const Bottom = () => {
 function Bitcoin() {
   return (
     <main style={{ display: "grid", gridTemplateColumns: "1fr 3fr 1.2fr" }}>
-      <section></section>
+      <section>
+        <Dashpart />
+      </section>
       <section className="white">
         <section className="overview">
+          <h3 className="view">Overview</h3>
           {/* <div className="holder"> */}
           <Top />
-
           <Middle />
           <Bottom />
         </section>
       </section>
-      <section></section>
+      <section className="history">
+        <Graph />
+      </section>
     </main>
   );
 }

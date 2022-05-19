@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Current(props) {
+export default function Current({ value, show }) {
   return (
     <section className="your">
       <div className="total">
@@ -13,7 +13,9 @@ export default function Current(props) {
           </div>
           <div className="naira">
             <h4>NGN</h4>
-            <p> {props.value}</p>
+            <p>
+              {value} {show}
+            </p>
           </div>
         </div>
       </div>
