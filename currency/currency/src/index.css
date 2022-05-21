@@ -15,13 +15,14 @@ code {
 * {
   padding: 0;
   margin: 0;
+  list-style-type: none;
 }
 
 .big {
   display: flex;
   flex-direction: column;
   width: 310px;
-  border-right: 3px solid#E5E5E5;
+  /* border-right: 3px solid#E5E5E5; */
   justify-content: center;
   /* border: 1px solid #000; */
   align-items: center;
@@ -105,9 +106,22 @@ code {
   height: 169px;
 }
 
+.are {
+  display: flex;
+  /* justify-content: center; */
+  margin-left: 20px;
+  color: #fff;
+  height: 100%;
+  align-items: center;
+}
+
 .peerimage {
   width: max-content;
   height: fit-content;
+}
+
+.template {
+  display: flex;
 }
 
 main {
@@ -121,12 +135,96 @@ main {
 .white {
   display: flex;
   /* height: 100vh; */
-  width: fit-content;
+  /* width: fit-content; */
+  justify-content: center;
+  flex-direction: column;
+  background-color: #e5e5e5;
+}
+
+.bar {
+  display: flex;
+  background-color: #fff;
+  /* flex-direction: column; */
+  height: 100px;
+  border-left: 5px solid #e5e5e5;
+  /* width: 1600px; */
+}
+
+.scope {
+  display: flex;
+}
+
+.scope-order {
+  display: flex;
+  margin: 20px 43px;
+  /* column-gap: 50px; */
+  width: 100%;
+  justify-content: space-between;
+}
+.border {
+  display: flex;
+  align-items: center;
+  border: 1px solid #0065ff;
+  border-radius: 10px;
+  width: 409px;
+  height: 50px;
+  justify-content: space-between;
+}
+
+.tit {
+  margin-left: 20px;
+}
+
+.tit > input::placeholder {
+  color: #cbc9c9;
+}
+
+.tit > input {
+  border: none;
+  outline: none;
+  font-size: 24px;
+  line-height: 31px;
+  font-weight: 400;
+  color: #000;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+}
+
+.icon > img {
+  width: 100%;
+  height: 100%;
+}
+
+.orderhold {
+  display: flex;
+  align-items: center;
+}
+
+.listedFour {
+  display: flex;
+  /* align-items: center; */
+}
+
+.listedFour > ul {
+  display: flex;
+  column-gap: 35px;
+  color: #636060;
+  font-size: 18px;
+  font-weight: 600;
   justify-content: center;
 }
 
+.listedFour > ul li:hover {
+  color: #0065ff;
+  cursor: pointer;
+}
+
 .overview {
-  background: #e5e5e5;
+  background-color: #e5e5e5;
   display: flex;
   /* width: 1000px; */
   flex-direction: column;
@@ -158,7 +256,7 @@ img {
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
-  margin-top: 70px;
+  /* margin-top: 70px; */
   /* padding: 200px; */
   padding-top: 50px;
   padding-bottom: 30px;
@@ -168,6 +266,7 @@ img {
 .view {
   color: #636060;
   font-size: 24px;
+  padding-bottom: 15px;
 }
 
 .holder {
@@ -359,7 +458,7 @@ img {
 
 .history {
   margin-top: 100px;
-  margin: 100px 30px 0px;
+  margin: 200px 30px 0px;
 }
 
 .arrows {

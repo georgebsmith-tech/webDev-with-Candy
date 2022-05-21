@@ -7,6 +7,7 @@ import Token from "./components/Token";
 import Polygon from "./components/polygon";
 import Dashpart from "./components/Dashpart";
 import Graph from "./components/Graph";
+import Search from "./components/Search";
 
 const Top = () => {
   return (
@@ -60,21 +61,29 @@ const Bottom = () => {
 
 function Bitcoin() {
   return (
-    <main style={{ display: "grid", gridTemplateColumns: "1fr 3fr 1.2fr" }}>
-      <section>
-        <Dashpart />
-      </section>
-      <section className="white">
-        <section className="overview">
-          <h3 className="view">Overview</h3>
-          {/* <div className="holder"> */}
-          <Top />
-          <Middle />
-          <Bottom />
+    <main>
+      <section
+        className="template"
+        style={{ display: "grid", gridTemplateColumns: "1fr 3fr 1.2fr" }}
+      >
+        <section>
+          <Dashpart />
         </section>
-      </section>
-      <section className="history">
-        <Graph />
+        <section className="white">
+          <section className="bar">
+            <Search />
+          </section>
+          <section className="overview">
+            <h3 className="view">Overview</h3>
+            {/* <div className="holder"> */}
+            <Top />
+            <Middle />
+            <Bottom />
+          </section>
+        </section>
+        <section className="history">
+          <Graph />
+        </section>
       </section>
     </main>
   );
