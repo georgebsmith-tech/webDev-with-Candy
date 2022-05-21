@@ -8,6 +8,7 @@ import Polygon from "./components/polygon";
 import Dashpart from "./components/Dashpart";
 import Graph from "./components/Graph";
 import Search from "./components/Search";
+import Ring from "./components/Ring";
 
 const Top = () => {
   return (
@@ -81,8 +82,11 @@ function Bitcoin() {
             <Bottom />
           </section>
         </section>
-        <section className="history">
-          <Graph />
+        <section className="notify">
+          <Ring />
+          <section className="history">
+            <Graph />
+          </section>
         </section>
       </section>
     </main>
