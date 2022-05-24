@@ -35,9 +35,9 @@ const Middle = () => {
       <div>
         <Current value={"1,234,567"} />
       </div>
-      <div>
+      <div className="deg">
         <Current value={36} />
-        <Polygon />
+        {/* <Polygon /> */}
       </div>
     </section>
   );
@@ -83,7 +83,6 @@ function Bitcoin() {
           </section>
         </section>
         <section className="notify">
-          <Ring />
           <section className="history">
             <Graph />
           </section>

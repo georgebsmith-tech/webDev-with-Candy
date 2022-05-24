@@ -1,4 +1,5 @@
 import React from "react";
+import Polygon from "./polygon";
 
 export default function Current({ value, show }) {
   return (
@@ -12,9 +13,14 @@ export default function Current({ value, show }) {
             </p>
           </div>
           <div className="naira">
-            <h4>NGN</h4>
+            <div className="naira">
+              <h4>NGN</h4>
+              <p>
+                {value} {show}
+              </p>
+            </div>
             <p>
-              {value} {show}
+              <Polygon />
             </p>
           </div>
         </div>

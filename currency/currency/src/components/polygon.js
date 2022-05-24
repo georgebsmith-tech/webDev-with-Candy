@@ -1,5 +1,5 @@
 import React from "react";
-export default function Polygon() {
+export default function Polygon({ poly }) {
   return (
     <div className="polygon">
       <div>
