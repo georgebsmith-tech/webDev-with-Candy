@@ -1,7 +1,7 @@
 import React from "react";
-import Dashpart from "./components/Dashpart";
-import Search from "./components/Search";
-import Ring from "./components/Ring";
+import Dashpart from "../components/Dashpart";
+import Search from "../components/Search";
+import Ring from "../components/Ring";
 
 export default function Paid() {
   return (

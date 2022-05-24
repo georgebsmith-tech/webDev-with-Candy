@@ -4,25 +4,18 @@ import ReactDOM from "react-dom/client";
 // import Deposit from "./Layout/Deposit";
 // import Transfer from "./Layout/Transfer";
 import "./index.css";
-// import App from "./App";
-import Link from "./Link";
-import reportWebVitals from "./reportWebVitals";
+import App from "./App";
 
-// export default function Do() {
-//   <BrowserRouter>
-//     <Routes>
-//       <Route path="deposit" element={<Deposit />}>
-//         <Route path="transfer" element={<Transfer />} />
-//       </Route>
-//     </Routes>
-//   </BrowserRouter>;
-// }
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    <Link />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
 
